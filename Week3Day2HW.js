@@ -54,9 +54,9 @@ for(let i = 0; i < jollyRoger.length; i++) {
         "Age:",jollyRoger[i].age
         )
 }
-const goldhook = new Pirate(false,true,true,"11 million")
-const silverhook = new Pirate(true,false,true,"5 million")
-const bronzehook = new Pirate(false,false,true,"2 million")
+const goldhook = new Pirate(false,true,true,"11 million",31)
+const silverhook = new Pirate(true,false,true,"5 million",26)
+const bronzehook = new Pirate(false,false,true,"2 million",29)
 const blackPearl = [goldhook,silverhook,bronzehook]
 console.log("BlackPearl Pirates")
 for(let i = 0; i < blackPearl.length; i++) {
