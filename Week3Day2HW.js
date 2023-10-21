@@ -1,20 +1,69 @@
-class Cat{
-    constructor(breed, eyes, fur, age) {
-        this.breed = breed;
-        this.eyes = eyes;
-        this.fur = fur;
-        this.age = age
+class Cat {
+        limbs = 4;
+        eyes = 2;
+        fur = true;
+        tail = true
+    happy() {
+        console.log("Purrr...")
     }
-
+    seeMouse() {
+        console.log("*Stalks")
+    }
+    scared() {
+        console.log("Hiss...")
+    }
 }
-
-const lux = new Cat("Siamese", "Blue", "Lilac Point", 4)
-const mrbarbatos = new Cat("Persian", "Green", "Gray", 13)
+const lux = new Cat()
+const mrbarbatos = new Cat()
 console.log(lux)
+lux.happy()
+lux.seeMouse()
+lux.scared()
 console.log(mrbarbatos)
+mrbarbatos.happy()
+mrbarbatos.seeMouse()
+mrbarbatos.scared()
 
 class Pirate {
-    constructor(){
-        
+    constructor(eyepatch,parrot,hook,bounty,age) {
+      this.eyepatch = eyepatch;
+      this.parrot = parrot;
+      this.hook = hook;
+      this.bounty = bounty; 
+      this.age = age    
     }
+    battle() {
+        console.log("Load the cannons!")
+    }
+    findTreasure() {
+        console.log("Take it to the ship.")
+    }   
+    victory() {
+        console.log("All drinks on me!")
+    }  
 }
+const blackbeard = new Pirate(true,false,false,"1 million",34)
+const graybeard = new Pirate(false,true,false,"2 million",50)
+const whitebeard = new Pirate(true,true,false,"2.5 million",61)
+const jollyRoger = [blackbeard,graybeard,whitebeard]
+console.log("JollyRoger Pirates")
+for(let i = 0; i < jollyRoger.length; i++) {
+    console.log(
+        "Eyepatch:",jollyRoger[i].eyepatch,
+        "Parrot:",jollyRoger[i].parrot,
+        "Age:",jollyRoger[i].age
+        )
+}
+const goldhook = new Pirate(false,true,true,"11 million")
+const silverhook = new Pirate(true,false,true,"5 million")
+const bronzehook = new Pirate(false,false,true,"2 million")
+const blackPearl = [goldhook,silverhook,bronzehook]
+console.log("BlackPearl Pirates")
+for(let i = 0; i < blackPearl.length; i++) {
+    console.log(
+        "Parrot:",blackPearl[i].parrot,
+        "Hook:",blackPearl[i].hook,
+        "Bounty:",blackPearl[i].bounty
+        )
+}
+
